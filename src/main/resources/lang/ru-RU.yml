@@ -1,0 +1,54 @@
+#Сообщения плагина
+
+#Разработчик: ILeZzoV
+#Написать мне:
+#Telegram: https://t.me/ilezovofficial
+#VK: https://vk.com/ilezovofficial
+
+#GitHub repository: https://github.com/ilezzov-code/IMSit
+
+#Placeholders:
+#%prefix% — префикс плагина
+
+#Не рекомендуется использоваться старую систему цветных сообщений!
+
+Plugin:
+  plugin-prefix: "&6IMSit &8|"
+  plugin-reload: "%prefix% &7Плагин перезагружен"
+  plugin-error: "%prefix% &7При перезагрузке возникла какая-то ошибка. Проверьте консоль!"
+
+Messages:
+  command-permissions-error: "%prefix% &7У вас нет прав на использования этой команды O_o"
+  command-disable: "%prefix% &7Эта команда отключена администрацией"
+  command-only-user: "%prefix% &7Эту команду могут использовать только игроки!"
+  command-help: |
+    %prefix% &7Помощь по командам плагина:
+    
+    &6/sit &7— Сесть
+    &6/lay &7— Лечь
+    &6/spin &7— Крутиться
+    &6/crawl &7— Ползти
+    
+    &6/imsit settings &7— GUI с настройками
+    &6/imsit reload &7— Перезагрузить плагин
+    &6/imsit support &7— Написать в поддержку плагина
+
+  command-support: "%prefix% &7Возникла проблема? Напиши разработчику — &bhttps://t.me/ilezovofficial"
+
+  command-sit-enable-chat: "%prefix% &7Вы сели, используйте &eSHIFT&7, чтобы встать"
+  command-sit-enable-actionbar: "&fИспользуйте &eSHIFT&f, чтобы встать"
+
+  command-lay-enable-chat:  "%prefix% &7Вы легли, используйте &eSHIFT&7, чтобы встать"
+  command-lay-enable-actionbar: "&fИспользуйте &eSHIFT&f, чтобы встать"
+
+  command-crawl-enable-chat: "%prefix% &7Вы ползете, используйте &eSHIFT&7, чтобы встать"
+  command-crawl-enable-actionbar: "&fИспользуйте &eSHIFT&f, чтобы встать"
+
+  command-spin-enable-chat: "%prefix% &7Вы крутитесь, используйте &eSHIFT&7, чтобы остановиться"
+  command-spin-enable-actionbar: "&fИспользуйте &eSHIFT&f, чтобы остановиться"
+
+
+
+
+
+

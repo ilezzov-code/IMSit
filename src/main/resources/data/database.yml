@@ -1,0 +1,9 @@
+#This is a database setting file
+
+Database:
+  type: "SQLITE" #SQLITE or MYSQL
+  host: "0.0.0.0"
+  port: "3306"
+  database: "imsit"
+  user: "root"
+  password: "password"

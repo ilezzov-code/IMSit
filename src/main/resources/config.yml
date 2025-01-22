@@ -1,0 +1,16 @@
+#██╗███╗░░░███╗░██████╗██╗████████╗
+#██║████╗░████║██╔════╝██║╚══██╔══╝
+#██║██╔████╔██║╚█████╗░██║░░░██║░░░
+#██║██║╚██╔╝██║░╚═══██╗██║░░░██║░░░
+#██║██║░╚═╝░██║██████╔╝██║░░░██║░░░
+#╚═╝╚═╝░░░░░╚═╝╚═════╝░╚═╝░░░╚═╝░░░
+#
+#Plugin developed by ILeZzoV
+#Contact with me:
+#Telegram: https://t.me/ilezovofficial
+#VK: https://vk.com/ilezovofficial
+#
+#GitHub repository: https://github.com/ilezzov-code/IMSit
+
+#Messages language. Enter /imsit reload to create a new language file | Languages: en-US, ru-RU
+lang: "en-US"

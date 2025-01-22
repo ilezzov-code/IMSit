@@ -1,0 +1,52 @@
+#The plugin's messages
+
+#Developer: ILeZzoV
+#Write mr:
+#Telegram: https://t.me/ilezovofficial
+#VK: https://vk.com/ilezovofficial
+
+#GitHub repository: https://github.com/ilezzov-code/IMSit
+
+#Placeholders:
+#%prefix% - the plugin prefix
+
+#It is not recommended to use the legacy color codes!
+
+Plugin:
+  plugin-prefix: "&6IMSit &8|"
+  plugin-reload: "%prefix% &7The plugin has been reloaded"
+  plugin-error: "%prefix% &7An error occurred during the reboot! Check the console"
+
+Messages:
+  command-permissions-error: "%prefix% &7You don't have permissions to use this command O_o"
+  command-disable: "%prefix% &7This command is disabled by the administrator"
+  command-only-user: "%prefix% &7This command can only be user by players"
+  command-help: |
+    %prefix% &7The help for plugin commands:
+    
+    &6/sit &7— Sit
+    &6/lay &7— Lay
+    &6/spin &7— Spin
+    &6/crawl &7— Crawl
+    
+    &6/imsit settings &7— GUI with settings
+    &6/imsit reload &7— Reload plugin
+    &6/imsit support &7— Write to the plugin support
+
+  command-support: "%prefix% &7Do you have a problem? Write to the plugin developer — &bhttps://t.me/ilezovofficial"
+
+  command-sit-enable-chat: "%prefix% &7You sat down, use &eSHIFT&7 to stand up"
+  command-sit-enable-actionbar: "&fUse &eSHIFT&f to stand up"
+
+  command-lay-enable-chat:  "%prefix% &You lay down, use &eSHIFT&7 to stand up"
+  command-lay-enable-actionbar: "&fUse &eSHIFT&f to stand up"
+
+  command-crawl-enable-chat: "%prefix% &You crawled, use &eSHIFT&7 to stand up"
+  command-crawl-enable-actionbar: "&fUse &eSHIFT&f to stand up"
+
+  command-spin-enable-chat: "%prefix% &You spun, use &eSHIFT&7&7 to stop"
+  command-spin-enable-actionbar: "&fUse &eSHIFT&f to stop"
+
+
+
+
