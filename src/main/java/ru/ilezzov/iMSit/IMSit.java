@@ -3,9 +3,9 @@ package ru.ilezzov.iMSit;
 import org.bukkit.plugin.java.JavaPlugin;
 import ru.ilezzov.iMSit.commands.IMSitCommand;
 import ru.ilezzov.iMSit.config.PluginFile;
-import ru.ilezzov.iMSit.maanger.ComponentManager;
-import ru.ilezzov.iMSit.maanger.DBmanager;
-import ru.ilezzov.iMSit.maanger.FileManager;
+import ru.ilezzov.iMSit.manager.ComponentManager;
+import ru.ilezzov.iMSit.manager.DBmanager;
+import ru.ilezzov.iMSit.manager.FileManager;
 import ru.ilezzov.iMSit.message.ConsoleMessages;
 import ru.ilezzov.iMSit.message.PluginMessages;
 

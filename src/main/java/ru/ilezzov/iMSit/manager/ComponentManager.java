@@ -1,4 +1,4 @@
-package ru.ilezzov.iMSit.maanger;
+package ru.ilezzov.iMSit.manager;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;

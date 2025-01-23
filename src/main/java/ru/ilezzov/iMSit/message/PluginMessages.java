@@ -2,7 +2,7 @@ package ru.ilezzov.iMSit.message;
 
 import net.kyori.adventure.text.Component;
 import ru.ilezzov.iMSit.IMSit;
-import ru.ilezzov.iMSit.maanger.ComponentManager;
+import ru.ilezzov.iMSit.manager.ComponentManager;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,6 +26,10 @@ public class PluginMessages {
 
     public Component pluginReload() {
         return COMPONENT_MANAGER.getComponentByKey("Plugin.plugin-reload", VALUES);
+    }
+
+    public Component noHasPerms() {
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-permissions-error", VALUES);
     }
 
     public Component commandSitEnableChat() {

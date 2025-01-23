@@ -1,4 +1,4 @@
-package ru.ilezzov.iMSit.maanger;
+package ru.ilezzov.iMSit.manager;
 
 import ru.ilezzov.iMSit.IMSit;
 import ru.ilezzov.iMSit.config.PluginFile;

@@ -1,17 +1,15 @@
-package ru.ilezzov.iMSit.maanger;
+package ru.ilezzov.iMSit.manager;
 
 import org.bukkit.Bukkit;
 import ru.ilezzov.iMSit.IMSit;
 import ru.ilezzov.iMSit.config.PluginFile;
 import ru.ilezzov.iMSit.model.Error;
 
-import javax.swing.plaf.basic.BasicButtonUI;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Locale;
 import java.util.logging.Logger;
 
 public class DBmanager {
