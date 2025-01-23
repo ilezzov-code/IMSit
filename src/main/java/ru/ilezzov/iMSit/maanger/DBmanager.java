@@ -1,18 +1,23 @@
 package ru.ilezzov.iMSit.maanger;
 
+import org.bukkit.Bukkit;
 import ru.ilezzov.iMSit.IMSit;
 import ru.ilezzov.iMSit.config.PluginFile;
 import ru.ilezzov.iMSit.model.Error;
 
+import javax.swing.plaf.basic.BasicButtonUI;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Locale;
+import java.util.logging.Logger;
 
 public class DBmanager {
     private final IMSit instance = IMSit.getInstance();
     private final PluginFile databaseFile = IMSit.getDatabaseFile();
+    private final Logger LOGGER = instance.getLogger();
 
     private final String HOST = databaseFile.getString("Database.host");
     private final String PORT = databaseFile.getString("Database.port");
@@ -29,7 +34,15 @@ public class DBmanager {
         try {
             connection = createConnection(HOST, PORT, DATABASE, USER, PASSWORD);
         } catch (SQLException e) {
+            LOGGER.info("Couldn't connect to Mysql, connection to SQLITE is underway. Error: " + e.getMessage());
+            type = "sqllite";
+            try {
+                connection = createConnection(HOST, PORT, DATABASE, USER, PASSWORD);
+            } catch (SQLException a) {
+                LOGGER.info("Couldn't connect to SQLite, the plugin disabling Error: " + a.getMessage());
+                Bukkit.getPluginManager().disablePlugin(instance);
             }
+        }
     }
 
     public Connection getConnection() {
