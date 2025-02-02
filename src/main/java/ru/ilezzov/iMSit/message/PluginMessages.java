@@ -1,6 +1,7 @@
 package ru.ilezzov.iMSit.message;
 
 import net.kyori.adventure.text.Component;
+import org.jetbrains.annotations.NotNull;
 import ru.ilezzov.iMSit.IMSit;
 import ru.ilezzov.iMSit.manager.ComponentManager;
 
@@ -32,36 +33,48 @@ public class PluginMessages {
         return COMPONENT_MANAGER.getComponentByKey("Messages.command-permissions-error", VALUES);
     }
 
+    public Component onlyUser() {
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-only-user", VALUES);
+    }
+
     public Component commandSitEnableChat() {
-        return COMPONENT_MANAGER.getComponentByKey("command-sit-enable-chat", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-sit-enable-chat", VALUES);
     }
 
     public Component commandSitEnableActionBar() {
-        return COMPONENT_MANAGER.getComponentByKey("command-sit-enable-actionbar", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-sit-enable-actionbar", VALUES);
+    }
+
+    public Component commandSitGroundError() {
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-sit-ground-error", VALUES);
     }
 
     public Component commandLayEnableChat() {
-        return COMPONENT_MANAGER.getComponentByKey("command-lay-enable-chat", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-lay-enable-chat", VALUES);
     }
 
     public Component commandLayEnableActionBar() {
-        return COMPONENT_MANAGER.getComponentByKey("command-lay-enable-actionbar", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-lay-enable-actionbar", VALUES);
+    }
+
+    public Component commandLayGroundError() {
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-lay-ground-error", VALUES);
     }
 
     public Component commandCrawlEnableChat() {
-        return COMPONENT_MANAGER.getComponentByKey("command-crawl-enable-chat", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-crawl-enable-chat", VALUES);
     }
 
     public Component commandCrawlEnableActionBar() {
-        return COMPONENT_MANAGER.getComponentByKey("command-crawl-enable-actionbar", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-crawl-enable-actionbar", VALUES);
     }
 
     public Component commandSpinEnableChat() {
-        return COMPONENT_MANAGER.getComponentByKey("command-spin-enable-chat", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-spin-enable-chat", VALUES);
     }
 
     public Component commandSpinEnableActionBar() {
-        return COMPONENT_MANAGER.getComponentByKey("command-spin-enable-actionbar", VALUES);
+        return COMPONENT_MANAGER.getComponentByKey("Messages.command-spin-enable-actionbar", VALUES);
     }
 
 }

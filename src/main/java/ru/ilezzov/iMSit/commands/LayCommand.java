@@ -1,4 +1,41 @@
 package ru.ilezzov.iMSit.commands;
 
-public class LayCommand {
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.jetbrains.annotations.NotNull;
+import ru.ilezzov.iMSit.IMSit;
+import ru.ilezzov.iMSit.api.IMSitApi;
+import ru.ilezzov.iMSit.message.PluginMessages;
+
+public class LayCommand implements CommandExecutor {
+    private PluginMessages pluginMessages = IMSit.pluginMessages();
+
+    @Override
+    public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] strings) {
+        if(!(commandSender instanceof Player)) {
+            commandSender.sendMessage(pluginMessages.onlyUser());
+            return true;
+        }
+
+        if(!commandSender.hasPermission("imsit.lay")) {
+            commandSender.sendMessage(pluginMessages.noHasPerms());
+            return true;
+        }
+
+        Player p = ((Player) commandSender).getPlayer();
+
+        if(!p.isOnGround()) {
+            p.sendMessage(pluginMessages.commandLayGroundError());
+            return true;
+        }
+
+        IMSitApi.createLay(p);
+
+        p.sendMessage(pluginMessages.commandLayEnableChat());
+        p.sendActionBar(pluginMessages.commandLayEnableActionBar());
+
+        return true;
+    }
 }

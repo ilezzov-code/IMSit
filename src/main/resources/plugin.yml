@@ -6,8 +6,16 @@ prefix: IMSit
 authors: [ ILeZzoV ]
 description: You can Sit, Lay and Crawl in Minecraft
 website: ilezzov.ru
+depend:
+  - ProtocolLib
 commands:
   imsit:
     usage: /imsit
     description: This is a main plugin command
+  sit:
+    usage: /sit
+    description: Sit on block
+  lay:
+    usage: /lay
+    description: Lay on block
 

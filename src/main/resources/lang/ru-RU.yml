@@ -36,10 +36,12 @@ Messages:
   command-support: "%prefix% &7Возникла проблема? Напиши разработчику — &bhttps://t.me/ilezovofficial"
 
   command-sit-enable-chat: "%prefix% &7Вы сели, используйте &eSHIFT&7, чтобы встать"
-  command-sit-enable-actionbar: "&fИспользуйте &eSHIFT&f, чтобы встать"
+  command-sit-enable-actionbar: "%prefix% &7Используйте &eSHIFT&f, чтобы встать"
+  command-sit-ground-error: "%prefix% &cВы не можете сидеть здесь"
 
   command-lay-enable-chat:  "%prefix% &7Вы легли, используйте &eSHIFT&7, чтобы встать"
   command-lay-enable-actionbar: "&fИспользуйте &eSHIFT&f, чтобы встать"
+  command-lay-ground-error: "%prefix% &cВы не можете лежать здесь"
 
   command-crawl-enable-chat: "%prefix% &7Вы ползете, используйте &eSHIFT&7, чтобы встать"
   command-crawl-enable-actionbar: "&fИспользуйте &eSHIFT&f, чтобы встать"

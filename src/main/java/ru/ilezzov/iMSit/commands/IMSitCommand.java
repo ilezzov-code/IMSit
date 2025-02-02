@@ -6,7 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 import ru.ilezzov.iMSit.IMSit;
 import ru.ilezzov.iMSit.config.PluginFile;
-import ru.ilezzov.iMSit.manager.DBmanager;
+import ru.ilezzov.iMSit.manager.DBManager;
 import ru.ilezzov.iMSit.message.PluginMessages;
 import ru.ilezzov.iMSit.model.Error;
 
@@ -55,7 +55,7 @@ public class IMSitCommand implements CommandExecutor {
 
                     IMSit.reloadManagers();
                     pluginMessages = IMSit.pluginMessages();
-                    DBmanager dBmanager = IMSit.getdBmanager();
+                    DBManager dBmanager = IMSit.getdBmanager();
 
                     Error dbManager = dBmanager.reconnect();
                     if(dbManager.isException()) {

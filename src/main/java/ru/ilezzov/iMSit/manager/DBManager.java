@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Logger;
 
-public class DBmanager {
+public class DBManager {
     private final IMSit instance = IMSit.getInstance();
     private final PluginFile databaseFile = IMSit.getDatabaseFile();
     private final Logger LOGGER = instance.getLogger();
@@ -28,7 +28,7 @@ public class DBmanager {
 
 
 
-    public DBmanager() {
+    public DBManager() {
         try {
             connection = createConnection(HOST, PORT, DATABASE, USER, PASSWORD);
         } catch (SQLException e) {
@@ -40,6 +40,13 @@ public class DBmanager {
                 LOGGER.info("Couldn't connect to SQLite, the plugin disabling Error: " + a.getMessage());
                 Bukkit.getPluginManager().disablePlugin(instance);
             }
+        }
+
+        try {
+            checkTables();
+        } catch (SQLException e) {
+            LOGGER.info("Couldn't create TABLES, the plugin disabling Error: " + e.getMessage());
+            Bukkit.getPluginManager().disablePlugin(instance);
         }
     }
 
@@ -67,6 +74,14 @@ public class DBmanager {
         return new Error();
     }
 
+    public Statement getStatement() {
+        try {
+            return connection.createStatement();
+        } catch (SQLException e) {
+            throw new  RuntimeException(e);
+            }
+        }
+
     private Connection createConnection(String host, String port, String database, String user, String password) throws SQLException {
         switch (type.toLowerCase()) {
             case "mysql" -> {
@@ -79,11 +94,12 @@ public class DBmanager {
         }
     }
 
-    private Statement getStatement() throws SQLException {
-        return connection.createStatement();
-    }
-
-    private void checkTables(String type) throws SQLException {
-         //TODO: checkTabled
+    private void checkTables() throws SQLException {
+         getStatement().execute("CREATE TABLE IF NOT EXISTS players (" +
+                 "uuid TEXT" +
+                 "clickSit BOOLEAN" +
+                 "shiftCrawl BOOLEAN" +
+                 "allowSit BOOLEAN" +
+                 ")");
     }
 }

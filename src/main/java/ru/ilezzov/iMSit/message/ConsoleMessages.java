@@ -28,6 +28,6 @@ public class ConsoleMessages {
     public static void errorCreateDirectory(Path directoryPath) {
         LOGGER.info("An error occurred when creating the file" + directoryPath);
     }
-
-    //TODO: errors PluginFile, DBManager
 }
+
+
